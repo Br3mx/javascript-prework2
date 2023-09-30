@@ -78,8 +78,6 @@ printMessage('Twój ruch to: ' + playerMove);
 } else if(playerMove == 'nieznany ruch'){
     printMessage('Wybierz liczbe od 1 do 3!');
 } */
-console.log('moves:', argComputerMove, argPlayerMove);
-
 function displayResult(argComputerMove, argPlayerMove){
     printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 
