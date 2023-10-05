@@ -5,11 +5,11 @@ function playGame(argPlayerMove) {
 
 
     // computer move
-    let randomNumber = Math.floor(Math.random() * 3 + 1);
+    const randomNumber = Math.floor(Math.random() * 3 + 1);
 
     console.log('Wylosowana liczba to: ' + randomNumber);
 
-    let argComputerMove = getMoveName(randomNumber);
+    const argComputerMove = getMoveName(randomNumber);
 
     function getMoveName(argMoveId) {
         if (argMoveId == 1) {
@@ -61,18 +61,18 @@ function playGame(argPlayerMove) {
     displayResult(argComputerMove, argPlayerMove);
     // listener
 }
-let buttonOne = document.getElementById('play-rock');
+const buttonOne = document.getElementById('play-rock');
 buttonOne.addEventListener('click', function () {
     playGame('kamień')
 });
 
 
-let buttonTwo = document.getElementById('play-paper');
+const buttonTwo = document.getElementById('play-paper');
 buttonTwo.addEventListener('click', function () {
     playGame('papier')
 });
 
-let buttonThree = document.getElementById('play-scissors');
+const buttonThree = document.getElementById('play-scissors');
 buttonThree.addEventListener('click', function () {
     playGame('nożyce')
 });
