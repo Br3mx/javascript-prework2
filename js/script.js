@@ -1,5 +1,5 @@
 // playGame
-
+{
 function playGame(argPlayerMove) {
     clearMessages();
 
@@ -10,14 +10,6 @@ function playGame(argPlayerMove) {
     console.log('Wylosowana liczba to: ' + randomNumber);
 
     let argComputerMove = getMoveName(randomNumber);
-
-    /* if(randomNumber == 1){
-    computerMove = 'kamień';
-    }else if(randomNumber == 2){
-    computerMove = 'papier';
-    }else if(randomNumber == 3){
-    computerMove = 'nożyce';
-    } */
 
     function getMoveName(argMoveId) {
         if (argMoveId == 1) {
@@ -41,6 +33,7 @@ function playGame(argPlayerMove) {
 
 
     function displayResult(argComputerMove, argPlayerMove) {
+        
         printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 
         if (argComputerMove == 'kamień' && argPlayerMove == 'papier') {
@@ -89,4 +82,4 @@ buttonThree.addEventListener('click', function () {
 
 
 
-
+}
