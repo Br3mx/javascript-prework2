@@ -1,6 +1,6 @@
 // playGame
 {
-function playGame(argPlayerMove) {
+const playGame = function(argPlayerMove) {
     clearMessages();
 
 
@@ -8,10 +8,10 @@ function playGame(argPlayerMove) {
     const randomNumber = Math.floor(Math.random() * 3 + 1);
 
     console.log('Wylosowana liczba to: ' + randomNumber);
-
     const argComputerMove = getMoveName(randomNumber);
 
-    function getMoveName(argMoveId) {
+
+    const getMoveName = function(argMoveId) {
         if (argMoveId == 1) {
             return 'kamień';
         } else if (argMoveId == 2) {
@@ -19,7 +19,7 @@ function playGame(argPlayerMove) {
         } else if (argMoveId == 3) {
             return 'nożyce'
         }
-    }
+    } 
 
 
     printMessage('Mój ruch to: ' + argComputerMove);
@@ -32,7 +32,7 @@ function playGame(argPlayerMove) {
     // game result
 
 
-    function displayResult(argComputerMove, argPlayerMove) {
+    const displayResult = function(argComputerMove, argPlayerMove) {
         
         printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 
