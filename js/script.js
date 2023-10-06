@@ -2,15 +2,6 @@
 {
 const playGame = function(argPlayerMove) {
     clearMessages();
-
-
-    // computer move
-    const randomNumber = Math.floor(Math.random() * 3 + 1);
-
-    console.log('Wylosowana liczba to: ' + randomNumber);
-    const argComputerMove = getMoveName(randomNumber);
-
-
     const getMoveName = function(argMoveId) {
         if (argMoveId == 1) {
             return 'kamień';
@@ -20,6 +11,15 @@ const playGame = function(argPlayerMove) {
             return 'nożyce'
         }
     } 
+
+    // computer move
+    const randomNumber = Math.floor(Math.random() * 3 + 1);
+
+    console.log('Wylosowana liczba to: ' + randomNumber);
+    const argComputerMove = getMoveName(randomNumber);
+
+
+    
 
 
     printMessage('Mój ruch to: ' + argComputerMove);
